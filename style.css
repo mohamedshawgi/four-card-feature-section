@@ -28,6 +28,7 @@ h1{
     font-weight: 300;
     font-size: 152%;
     text-align: center;
+    line-height: 1.6;
 }
 h1 span{
     font-weight: bold;
@@ -40,8 +41,10 @@ p{
 }
 .hero{
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 3.5rem;
+    margin:1.5rem auto 3.5rem auto;
+    max-width: 34rem;
+    line-height: 1.6;
+
 }
 .card{
     background-color:white;
@@ -79,10 +82,7 @@ p{
     border-top: 0.2rem var(--Blue) solid;
 }
 @media (min-width:60rem){
-    body>p{
-        max-width: 55%;
-        margin: 0 auto;;
-    }
+
     .cards{
         display:grid;
         grid-template-columns: repeat(3,1fr);
