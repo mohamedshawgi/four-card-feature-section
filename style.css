@@ -22,10 +22,10 @@ body{
     font-size: 15px;
     font-family: 'Poppins',sans-serif;
     background-color: var(--Very-Light-Gray);
-    padding: 4rem 2rem;
+    padding: 5.875rem 2rem;
 }
 h1{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 152%;
     text-align: center;
 }
@@ -33,24 +33,28 @@ h1 span{
     font-weight: bold;
 }
 p{
-    color: var(--Very-Dark-Blue);
+    color: var(--Grayish-Blue);
 }
 .card h2, h1{
     color:var(--Very-Dark-Blue)
 }
 .hero{
     text-align: center;
+    margin-top: 1.5rem;
     margin-bottom: 3.5rem;
 }
 .card{
     background-color:white;
     position: relative;
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     margin: 1.25rem auto;
     height: 13.75rem;
     line-height: 1.8;
-    box-shadow: 0 0 0.6rem rgb(150,150,150);
+    /* box-shadow: 0 0 0.6rem rgb(150,150,150); */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
 
 }
 .card p{
@@ -81,12 +85,15 @@ p{
     }
     .cards{
         display:grid;
-        grid-template-columns: repeat(3,fr);
-        grid-template-rows: repeat(4,fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
         gap: 1.5rem;
     }
     .card{
         margin: 0;
+    }
+    .card p{
+        max-width:15.625rem;
     }
     #supervisor{
         grid-column: 1/2;
